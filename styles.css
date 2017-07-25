@@ -1,0 +1,125 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 1s;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.column-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-layout--spaced {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.grid-layout {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  width: 100vw;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.section--vertical {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.image-bg {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Component Styles */
+.header {
+  background-image: url(https://preview.ibb.co/japUqQ/bg.png);
+}
+
+.header__face {
+  filter: opacity(80%);
+  width: 15vw;
+}
+
+.header__face:hover {
+  filter: opacity(90%) blur(0);
+}
+
+.header__title {
+  font-size: calc(2em + 5vw);
+  font-family: "Metal Mania", cursive;
+  text-shadow: 0 5px #333;
+}
+
+.header__title > a {
+  color: #d32f2f;
+}
+
+.header__subtitle {
+  font-size: calc(1em + 2vw);
+  color: #03A9F4;
+  font-family: "Roboto Slab", sans-serif;
+  text-shadow: 0 4px 5px #333;
+}
+
+.header__mini-title {
+  font-size: calc(0.5em + 1vw);
+  color: #FFECB3;
+  font-family: "Oswald", sans-serif;
+  font-weight: 100;
+  text-shadow: 0 3px 5px #333;
+}
+
+.videos {
+  background-color: #424242;
+  background-image: url(http://img01.ibnlive.in/ibnlive/uploads/2017/07/maxresdefault.jpg);
+}
+
+.videos__title {
+  font-size: calc(2em + 2vw);
+  color: #616161;
+  font-family: "Roboto Slab", sans-serif;
+  text-shadow: 0 4px 5px #111;
+  margin: 2em;
+}
+
+.video__item {
+  margin-bottom: 2em;
+}
+
+.spotify {
+  background-color: #FAFAFA;
+  background-image: url(http://www.tattoo.com/sites/default/files/u518404/chester_band_shot2.jpg);
+}
+
+.spotify__title {
+  font-size: calc(2em + 2vw);
+  color: #FAFAFA;
+  font-family: "Roboto Slab", sans-serif;
+  text-shadow: 0 4px 5px #111;
+  margin: 2em;
+}
+
+.spotify__item {
+  margin-bottom: 2em;
+  box-shadow: 0 0 30px #333;
+}
